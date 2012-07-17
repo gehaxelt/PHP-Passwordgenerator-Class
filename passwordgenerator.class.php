@@ -56,7 +56,7 @@ class PasswordGenerator{
 		if($Passwordlength<1)
 			throw new PasswordTooShortExeception('The password length is too short');
 		
-		if(!($LowerChars||$UpperChars||$SpecialChars))
+		if(!($LowerChars||$UpperChars||$SpecialChars||$NumericChars))
 			throw new NoCharactersetDefined('No characterset was defined');
 		
 		/**
