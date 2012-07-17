@@ -36,6 +36,8 @@ class PasswordGenerator{
 		/**
 		 * Validating the parameters
 		 */
+		$this->characterset='';
+		$this->password='';
 		if(!is_int($Passwordlength))
 			throw new NotAnIntegerExeception('First parameter $Passwordlength is not an integer');
 					
